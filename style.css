@@ -1,0 +1,43 @@
+:root{
+    --primary-green: rgb(177, 250, 67);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 62.5%;
+}
+
+.navbar-brand{
+    font-weight: 700;
+}
+
+.navbar{
+   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.329);
+}
+
+.section-proyectos{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: var(--primary-green);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.proyects-container{
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.list-group li{
+    list-style-type: none;
+    padding: 0.8rem;
+}
+
+
