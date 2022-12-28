@@ -40,4 +40,67 @@ html{
     padding: 0.8rem;
 }
 
+/* PAGINA LOGIN */
+.main-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    width: 100%;
+    height: 100vh;
+}
+.section-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1005;
 
+}
+.section-top img {
+    width: 80%;
+}
+.section-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding:1.5rem;
+    background-color: var(--primary-green);
+}
+.section-bottom label{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.section-bottom input{
+    padding: 1rem;
+    margin: 0.7rem 0;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.section-bottom .btn-ingresar{
+    background-color: white;
+    width: 50%;
+    height: 2rem;
+    border-radius: 8px;
+    border: none;
+}
+
+@media (min-width: 700px) {
+    .main-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .sections {
+        height: 100vh;
+        justify-content: center;
+    }
+    .section-bottom{
+        justify-content: flex-end;
+        padding-bottom: 5rem;
+    }
+    .section-bottom input{
+        letter-spacing: 0.1rem;
+        margin: 1rem 0;
+    }
+  }
