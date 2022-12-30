@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROYECTO Ok</title>
+  </head>
+  <body>
+    <p>PROYECTOS</p>
+    <div><label for="num_registros">Mostrar:</label></div>
+    <div>
+      <select name="num_registros" id="num_registros" class="form-select">
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+      </select>
+      <div><label for="num_registros">Registro</label></div>
+    </div>
+    <div><label for="campo">Buscar:</label></div>
+    <div><input type="text" name="campo" id="campo" /></div>
+    <table>
+      <thead>
+        <th>ID Proyecto</th>
+        <th>Nombre Proyecto</th>
+        <th>Director del Proyecto</th>
+        <th>Descripcion del Proyecto</th>
+        <th>Fecha Proyecto</th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody id="content"></tbody>
+    </table>
+    <div>
+      <label id="lbl-total"></label>
+    </div>
+    <div id="nav-paginacion"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>
