@@ -1,5 +1,14 @@
 <?php
-require '../login.php';
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpass = "";
+$dbname = "proyecto";
+
+$conn =  mysqli_connect($dbhost, $dbuser,$dbpass, $dbname);
+
+if(!$conn){
+    die("No hay una conexión: ".mysqli_connect_error());
+}
 
 $sqlProyectos = "SELECT id, nombre, director, facultad, descripcion, fecha FROM proyectos";
 $proyectos = $conn->query($sqlProyectos);
@@ -17,7 +26,33 @@ $proyectos = $conn->query($sqlProyectos);
       crossorigin="anonymous"
     />
   </head>
+  <link rel="stylesheet" href="../style.css">
   <body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-light" >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="#">UTS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+            </ul>
+              <button class="btn btn-outline-dark" type="submit"><a class="nav-link" href="../login.html">Salir</a></button>
+          </div>
+        </div>
+      </nav>
+
+
     <div class="container py-3">
       <h2 class="text-center">Crud</h2>
      
@@ -65,6 +100,17 @@ $proyectos = $conn->query($sqlProyectos);
   include './editarModal.php';
   include './eliminaModal.php';
   ?>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="text-bg-dark pt-3 position-absolute bottom-0 w-100">
+  <div class="redes-contaienr d-flex justify-content-center flex-wrap p-4 text-light">
+          <a class="px-2" href="https://www.facebook.com/photo/?fbid=430691219216227&set=a.430691199216229"><img src="https://img.icons8.com/color/48/null/facebook-new.png"/></a>
+          <a href="https://twitter.com/Unidades_UTS"><img src="https://img.icons8.com/color/48/null/twitter-circled--v1.png"/></a>
+          <a class="px-2" href="https://www.instagram.com/unidades_uts/?hl=els-la"><img src="https://img.icons8.com/fluency/48/null/instagram-new.png"/></a>
+          <a href="https://co.linkedin.com/school/unidades-tecnol%C3%B3gicas-de-santander/"><img src="https://img.icons8.com/color/48/null/linkedin.png"/></a>
+          <a class="px-2" href="https://www.youtube.com/channel/UC-rIi4OnN0R10Wp-cPiLcpQ"><img src="https://img.icons8.com/color/48/null/youtube-play.png"/></a>
+  </div> 
+</footer>
     <script src="./main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

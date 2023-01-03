@@ -34,7 +34,7 @@
           <div class="mb-3">
             <label for="director" class="form-label">Director</label>
             <input
-              type="text"
+              type="select"
               class="form-control"
               name="director"
               id="director"
@@ -44,7 +44,7 @@
           </div>
 
           <div class="mb-3">
-            <label for="facultad" class="form-label">Selecciona una de las Carreras</label>
+            <label for="facultad" class="form-label">Facultad</label>
             <input
               type="text"
               class="form-control"
