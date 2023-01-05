@@ -101,7 +101,7 @@ if ($output['totalRegistros'] > 0) {
     $totalPaginas = ceil($output['totalRegistros'] / $limit);
 
     $output['paginacion'] .= '<nav>';
-    $output['paginacion'] .= '<ul>';
+    $output['paginacion'] .= '<ul class="pagination">';
 
     $numeroInicio = 1;
 
@@ -117,9 +117,9 @@ if ($output['totalRegistros'] > 0) {
 
     for ($i = $numeroInicio; $i <= $numeroFin; $i++) {
         if ($pagina == $i) {
-            $output['paginacion'] .= '<li class="active"><a href="#">' . $i . '</a></li>';
+            $output['paginacion'] .= '<li class="page-item active"><a class="page-link" href="#">' . $i . '</a></li>';
         } else {
-            $output['paginacion'] .= '<li class=""><a class="" href="#" onclick="getData(' . $i . ')">' . $i . '</a></li>';
+            $output['paginacion'] .= '<li class="page-item"><a class="page-link" href="#" onclick="getData(' . $i . ')">' . $i . '</a></li>';
         }
     }
 

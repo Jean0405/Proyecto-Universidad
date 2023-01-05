@@ -45,7 +45,7 @@
           </div>
 
           <div class="mb-3">
-            <label for="facultad" class="form-label">Selecciona una de las Carreras</label>
+            <label for="facultad" class="form-label">Facultad</label>
             <input
               type="text"
               class="form-control"
