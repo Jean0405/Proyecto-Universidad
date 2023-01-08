@@ -1,6 +1,6 @@
 <?php
 
-require '../login.php';
+require '../conexion.php';
 
 $id = $conn->real_escape_string($_POST['id']);
 

@@ -1,7 +1,11 @@
 <?php 
-require "./login.php";
-$sqlProyectos = "SELECT id, nombre FROM proyectos LIMIT 3";
+require './conexion.php';
+$sqlProyectos = "SELECT id, nombre FROM proyectos  WHERE facultad LIKE '%NATURALES E INGENIERIAS' ORDER BY fecha DESC LIMIT 4";
 $proyectos = $conn->query($sqlProyectos);
+
+
+$sqlProyectos2 = "SELECT id, nombre FROM proyectos WHERE facultad LIKE '%SOCIOECONÓMICAS Y EMPRESARIALES' ORDER BY fecha DESC LIMIT 4";
+$proyectos2 = $conn->query($sqlProyectos2);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -135,11 +139,6 @@ $proyectos = $conn->query($sqlProyectos);
           <li><?= $row_proyecto['nombre']; ?></li></a>
         </ul>
         <?php }?>
-        <ul class="list-group">
-          <li>Proyecto</li>
-          <li>Proyecto</li>
-          <li>Proyecto</li>
-        </ul>
       </div>
     </div>
     <div class="section-proyectos m-4 p-2">
@@ -147,16 +146,11 @@ $proyectos = $conn->query($sqlProyectos);
       <div
         class="proyects-container w-100 d-flex justify-content-around bg-light"
       >
-        <?php while ($row_proyecto = $proyectos->fetch_assoc()) {?>
+        <?php while ($row_proyecto = $proyectos2->fetch_assoc()) {?>
         <ul class="list-group">
           <li><?= $row_proyecto['nombre']; ?></li></a>
         </ul>
         <?php }?>
-        <ul class="list-group">
-          <li>Proyecto</li>
-          <li>Proyecto</li>
-          <li>Proyecto</li>
-        </ul>
       </div>
     </div>
 

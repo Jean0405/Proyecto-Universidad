@@ -37,3 +37,4 @@ eliminaModal.addEventListener("shown.bs.modal", (event) => {
   let id = button.getAttribute("data-bs-id");
   eliminaModal.querySelector(".modal-footer #id").value = id;
 });
+

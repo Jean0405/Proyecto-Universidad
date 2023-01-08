@@ -90,6 +90,12 @@ input[type="submit"]:hover{
     background-color: rgb(34, 34, 34);
     color: var(--secundary-light);
 }
+
+
+
+/* SCROLL HORIZONTAL CRUD */
+
+
 @media (min-width: 700px) {
     .main-container{
         grid-template-columns: 1fr 1fr;
@@ -107,4 +113,5 @@ input[type="submit"]:hover{
         letter-spacing: 0.1rem;
         margin: 1rem 0;
     }
+
   }

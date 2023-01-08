@@ -1,5 +1,5 @@
 <?php 
-require '../login.php';
+require '../conexion.php';
 
 $nombre = $conn->real_escape_string($_POST['nombre']);
 $director = $conn->real_escape_string($_POST['director']);
