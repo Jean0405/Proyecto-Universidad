@@ -132,10 +132,10 @@ $proyectos2 = $conn->query($sqlProyectos2);
     <div class="section-proyectos m-4 p-2" id="proyectos">
       <h2>FACULTAD DE CIENCIAS NATURALES E INGENIERÍAS</h2>
       <div
-        class="proyects-container w-100 d-flex justify-content-around bg-light"
+        class="proyects-container w-100 d-flex justify-content-around bg-light row"
       >
       <?php while ($row_proyecto = $proyectos->fetch_assoc()) {?>
-        <ul class="list-group">
+        <ul class="list-group col">
           <li><?= $row_proyecto['nombre']; ?></li></a>
         </ul>
         <?php }?>
@@ -144,10 +144,10 @@ $proyectos2 = $conn->query($sqlProyectos2);
     <div class="section-proyectos m-4 p-2">
       <h2>FACULTAD DE CIENCIAS SOCIOECONÓMICAS Y EMPRESARIALES</h2>
       <div
-        class="proyects-container w-100 d-flex justify-content-around bg-light"
+        class="proyects-container w-100 d-flex justify-content-around bg-light row"
       >
         <?php while ($row_proyecto = $proyectos2->fetch_assoc()) {?>
-        <ul class="list-group">
+        <ul class="list-group col">
           <li><?= $row_proyecto['nombre']; ?></li></a>
         </ul>
         <?php }?>
