@@ -19,6 +19,7 @@ $proyectos = $conn->query($sqlProyectos);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Crud</title>
+    <link rel="icon" href="../icon/libro-abierto.png" />
     <link rel="stylesheet" href="../style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -42,12 +43,6 @@ $proyectos = $conn->query($sqlProyectos);
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="../index.php">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#proyectos">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosotros">Nosotros</a>
-              </li>
             </ul>
               <button class="btn btn-outline-dark" type="submit"><a class="nav-link" href="../login.html">Salir</a></button>
           </div>
@@ -62,7 +57,7 @@ $proyectos = $conn->query($sqlProyectos);
         <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nuevoModal">Nuevo Proyecto</a>
       </div>
     </div>
-  <div class="overflow-scroll" style="height: 22rem;">
+  <div class="overflow-scroll" style="height: 34rem;">
     <table class="table table-info table-hover mt-2">
       <thead class="table-dark">
         <tr>
