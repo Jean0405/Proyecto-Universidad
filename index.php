@@ -239,22 +239,27 @@ $proyectos2 = $conn->query($sqlProyectos2);
         <a
           class="px-2"
           href="https://www.facebook.com/photo/?fbid=430691219216227&set=a.430691199216229"
+          target="blank"
           ><img src="https://img.icons8.com/color/48/null/facebook-new.png"
         /></a>
         <a href="https://twitter.com/Unidades_UTS"
+        target="blank"
           ><img
             src="https://img.icons8.com/color/48/null/twitter-circled--v1.png"
         /></a>
         <a class="px-2" href="https://www.instagram.com/unidades_uts/?hl=els-la"
+        target="blank"
           ><img src="https://img.icons8.com/fluency/48/null/instagram-new.png"
         /></a>
         <a
           href="https://co.linkedin.com/school/unidades-tecnol%C3%B3gicas-de-santander/"
+          target="blank"
           ><img src="https://img.icons8.com/color/48/null/linkedin.png"
         /></a>
         <a
           class="px-2"
           href="https://www.youtube.com/channel/UC-rIi4OnN0R10Wp-cPiLcpQ"
+          target="blank"
           ><img src="https://img.icons8.com/color/48/null/youtube-play.png"
         /></a>
       </div>
@@ -274,6 +279,7 @@ $proyectos2 = $conn->query($sqlProyectos2);
           <button class="fw-bolder fs-1 btn btn-outline-dark">
             <a
               href="https://www.uts.edu.co/sitio/"
+              target="blank"
               class="text-decoration-none text-light"
               >UTS</a
             >
