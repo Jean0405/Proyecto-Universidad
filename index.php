@@ -175,7 +175,7 @@ $proyectos2 = $conn->query($sqlProyectos2);
           </p>
         </div>
         <div class="card-footer bg-transparent border-dark">
-          <a class="list-group-item fst-italic" href="">Ubicación</a>
+          <a class="list-group-item fst-italic" href="https://www.google.com/maps/place/Unidades+Tecnol%C3%B3gicas+de+Santander/@7.1049884,-73.1238068,17z/data=!3m1!4b1!4m6!3m5!1s0x8e683fc8a8b0973f:0x5f50c91e41f0ac6e!8m2!3d7.1049884!4d-73.1238068!16s%2Fg%2F121hx3m3" target="blank">Ubicación</a>
         </div>
       </div>
 
@@ -193,7 +193,7 @@ $proyectos2 = $conn->query($sqlProyectos2);
           </p>
         </div>
         <div class="card-footer bg-transparent border-dark">
-          <a class="list-group-item fst-italic" href="">Ubicación</a>
+          <a class="list-group-item fst-italic" href="https://www.google.com/maps/place/Colegio+Diego+Hernandez+de+Gallegos/@7.0674928,-73.8532841,17z/data=!3m1!4b1!4m6!3m5!1s0x8e42eb570701b849:0x7b38f076f712d73b!8m2!3d7.0674875!4d-73.8510954!16s%2Fg%2F1hm35hgdk" target="blank">Ubicación</a>
         </div>
       </div>
 
@@ -207,7 +207,7 @@ $proyectos2 = $conn->query($sqlProyectos2);
           </p>
         </div>
         <div class="card-footer bg-transparent border-dark">
-          <a class="list-group-item fst-italic" href="">Ubicación</a>
+          <a class="list-group-item fst-italic" href="https://www.google.com/maps/place/Unidades+Tecnol%C3%B3gicas+de+Santander+UTS+V%C3%A9lez/@6.0147244,-73.6756778,16.75z/data=!4m10!1m2!2m1!1sRegional+UTS+velez!3m6!1s0x8e41f068fb11c60b:0xa22a98f0e281780f!8m2!3d6.0164116!4d-73.6736158!15sChJSZWdpb25hbCBVVFMgdmVsZXqSARFwdWJsaWNfdW5pdmVyc2l0eeABAA!16s%2Fg%2F11dxjq3rgf" target="blank">Ubicación</a>
         </div>
       </div>
 
@@ -224,7 +224,7 @@ $proyectos2 = $conn->query($sqlProyectos2);
           </p>
         </div>
         <div class="card-footer bg-transparent border-dark">
-          <a class="list-group-item fst-italic" href="">Ubicación</a>
+          <a class="list-group-item fst-italic" href="https://www.google.com/maps/place/Regional+UTS+Piedecuesta/@6.9957084,-73.0675367,17z/data=!4m6!3m5!1s0x8e68477543ddd64f:0x37245515cb6b4d13!8m2!3d6.9957031!4d-73.065348!16s%2Fg%2F11c3pmg941" target="blank">Ubicación</a>
         </div>
       </div>
     </div>
