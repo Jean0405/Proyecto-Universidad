@@ -12,7 +12,7 @@ if ($nr == 1) {
     header("Location: Crud/index.php");
     
 }else if($nr == 0){
-    echo "No hay ingreso";
+    header("Location: login.html");
 }
 
 ?>
